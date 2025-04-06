@@ -1,9 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import nptelLogo from "../assets/nptel.png";
+import mongodbLogo from "../assets/mongodb.png";
+
 
 const Certifications = () => {
   const certifications = [
+    {
+      name: "MongoDB certified Associate Developer",
+      issuer: "MongoDB",
+      logo: mongodbLogo,
+      link: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/2d155a8a-2c2e-473e-9b9b-6f07022c8559-kavi-priya-s-23bcr024-9d0de2ae-4eaa-4bf3-b1c4-a3780b1fda98-certificate.pdf"
+    },
     {
       name: "Programming in Modern C++",
       issuer: "NPTEL",
