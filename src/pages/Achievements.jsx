@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 const Achievements = () => {
   const achievements = [
-    "Academic Excellence Award, Kongu Engineering College"
+    "Academic Excellence Award, Kongu Engineering College",
+    "Exceptional Performance in C programming Contest,Kongu Engineering College & CodeTantra"
     // Add more achievements here as needed
   ];
 

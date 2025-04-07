@@ -12,6 +12,10 @@ import mysql from "../assets/mysql.png";
 import php from "../assets/php.png";
 import python from "../assets/python.png";
 import css from "../assets/css.jpeg";
+import react from "../assets/react.png";
+import node from "../assets/node.png";
+import vscode from "../assets/vscode.jpg";
+import android from "../assets/android.png"
 
 const Skills = () => {
   const skills = [
@@ -23,8 +27,12 @@ const Skills = () => {
     { name: "CSS", logo: css },
     { name: "JavaScript", logo: js },
     { name: "PHP", logo: php },
-    { name: "MySQL", logo: mysql },
+    { name: "React", logo: react },
+    { name: "Node.js", logo: node },
     { name: "MongoDB", logo: mongodb },
+    { name: "MySQL", logo: mysql },
+    { name: "VSCode", logo: vscode },
+    { name: "Android", logo: android },
     { name: "Git", logo: git },
     { name: "GitHub", logo: github },
   ];
