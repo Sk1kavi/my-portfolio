@@ -36,6 +36,7 @@ const Internships = () => {
           }}
           className="bg-gray-100 p-6 rounded-lg cursor-pointer"
         >
+          
           <motion.div
             whileHover={{ 
               scale: 1.02,
@@ -48,7 +49,7 @@ const Internships = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-2xl font-bold text-violet-600 mb-2"
             >
-              Machine Learning Intern
+             Machine Learning Intern
             </motion.h3>
             
             <motion.p 
@@ -57,7 +58,7 @@ const Internships = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="text-lg text-gray-700"
             >
-              Codsoft 
+              CodSoft
             </motion.p>
             
             <motion.p 
