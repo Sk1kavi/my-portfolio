@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import nptelLogo from "../assets/nptel.png";
 import mongodbLogo from "../assets/mongodb.png";
@@ -66,7 +65,6 @@ const Certifications = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          // Remove viewport={{ once: true }} to make it animate every time
           className="space-y-6"
         >
           {certifications.map((cert, index) => (

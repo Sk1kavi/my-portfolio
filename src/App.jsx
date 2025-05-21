@@ -3,7 +3,7 @@ import Hero from './pages/Hero';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Education from './pages/Education';
-import Internships from './pages/Internships';
+import Internship from './pages/Internship';
 import Training from './pages/Training';
 import Certifications from './pages/Certifications';
 import Workshops from './pages/Workshops';
@@ -21,7 +21,7 @@ export default function App() {
       <About />
       <Skills />
       <Education />
-      <Internships />
+      <Internship />
       <Training />
       <Certifications />
       <Workshops />

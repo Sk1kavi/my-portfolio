@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -39,9 +39,7 @@ const About = () => {
           transition={{ delay: 0.4 }}
           className="text-lg text-gray-50 font-bold mb-8 leading-loose"
         >
-          I am a passionate and dedicated programmer with proficiency in C, C++, Java, and Python. My problem-solving skills have been honed through consistent practice on platforms like HackerRank, LeetCode, CodeChef, and GeeksforGeeks, where I have earned several badges and maintained impressive streaks. With a strong interest in Data Science and Artificial Intelligence, I am actively pursuing training and have gained hands-on experience in Machine Learning through internships. I have independently completed projects such as Customer Churn Prediction, Spam SMS Detection, and Credit Card Fraud Detection, which have strengthened my technical expertise and analytical abilities. Driven by a continuous desire to learn, I have completed multiple certifications and internships. My goal is to leverage my skills and analytical mindset to build innovative solutions, tackle challenging problems, and collaborate with like-minded professionals to achieve excellence.
-
-          Fun fact: I love solving puzzles and playing chess in my free time!
+          I am a passionate and dedicated programmer with proficiency in C, C++, Java, and Python. My problem-solving skills have been honed through consistent practice on platforms like HackerRank, LeetCode, CodeChef, and GeeksforGeeks, where I have earned several badges and maintained impressive streaks. With a strong interest in Data Science and Artificial Intelligence, I have completed trainings and gained hands-on experience in Machine Learning through internship. I have independently completed projects such as Customer Churn Prediction, Spam SMS Detection, and Credit Card Fraud Detection, which have strengthened my technical expertise and analytical abilities. Driven by a continuous desire to learn, I have completed multiple certifications. My goal is to leverage my skills and analytical mindset to build innovative solutions, tackle challenging problems, and collaborate with like-minded professionals to achieve excellence.
         </motion.p>
       </motion.div>
     </section>

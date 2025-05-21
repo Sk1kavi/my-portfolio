@@ -15,7 +15,12 @@ import css from "../assets/css.jpeg";
 import react from "../assets/react.png";
 import node from "../assets/node.png";
 import vscode from "../assets/vscode.jpg";
-import android from "../assets/android.png"
+import android from "../assets/android.png";
+import numpy from "../assets/numpy.png";
+import pandas from "../assets/pandas.png";
+import flask from "../assets/flask.png";
+import matplotlib from "../assets/matplotlib.png";
+
 
 const Skills = () => {
   const skills = [
@@ -31,21 +36,15 @@ const Skills = () => {
     { name: "Node.js", logo: node },
     { name: "MongoDB", logo: mongodb },
     { name: "MySQL", logo: mysql },
+    { name: "NumPy", logo: numpy},
+    { name: "Pandas", logo: pandas},
+    { name: "Matplotlib", logo: matplotlib},
+    { name: "Flask", logo: flask},
     { name: "VSCode", logo: vscode },
     { name: "Android", logo: android },
     { name: "Git", logo: git },
     { name: "GitHub", logo: github },
   ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -66,18 +65,17 @@ const Skills = () => {
         >
           Technical Skills
         </motion.h2>
-        
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+
+        <div // Removed motion and animation props from container
           className="grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {skills.map((skill, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
+              initial="hidden" // Apply initial state to each item
+              whileInView="visible" // Apply whileInView to each item
+              viewport={{ once: true, amount: 0.5 }} // Apply viewport to each item
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl"
             >
@@ -102,7 +100,7 @@ const Skills = () => {
               </motion.p>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

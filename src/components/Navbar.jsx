@@ -9,7 +9,7 @@ const Navbar = () => {
             { href: "#about", label: "About" },
             { href: "#skills", label: "Skills" },
             { href: "#education", label: "Education" },
-            { href: "#internships", label: "Internship" },
+            { href: "#internship", label: "Internship" },
             { href: "#training", label: "Trainings" },
             { href: "#certifications", label: "Certifications" },
             { href: "#workshops", label: "Workshops" },

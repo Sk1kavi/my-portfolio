@@ -1,5 +1,4 @@
-// src/pages/Contact.jsx
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
@@ -11,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_maybxf5", // Replace with your EmailJS service ID
-        "template_ighfddf", // Replace with your EmailJS template ID
+        "service_maybxf5",
+        "template_ighfddf", 
         form.current,
-        "8zP_rMHkZpiyDTNP0" // Replace with your EmailJS user ID
+        "8zP_rMHkZpiyDTNP0" 
       )
       .then(
         (result) => {

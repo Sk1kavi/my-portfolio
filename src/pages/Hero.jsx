@@ -48,7 +48,7 @@ const Hero = () => {
   ];
 
   // Typing animation text
-  const text = "Software Developer | Full-Stack Developer";
+  const text = "Full-Stack Developer | Data Enthusiast | AI Enthusiast";
   const characters = Array.from(text);
 
   return (
@@ -104,7 +104,7 @@ const Hero = () => {
               }}
               className="text-2xl font-bold font-serif inline-block text-purple-900"
             >
-              {char}
+             {char === " " ? "\u00A0" : char}
             </motion.span>
           ))}
         </motion.div>
@@ -115,8 +115,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.5 }}
         >
-          Passionate Software Developer with expertise in C, C++, Java, Python, and full-stack development. Experienced in Machine Learning, Web Development, and Database Management. Strong problem-solving skills with a consistent coding streak on platforms like LeetCode and CodeChef. Eager to learn and innovate in AI, Data Science, and Software Development.
-        </motion.p>
+Passionate programmer with a strong foundation in C, C++, Java, Python, and full-stack development. Gained hands-on experience in Machine Learning and Web Development through an internship and training programs . Problem-solving skills honed through consistent practice on platforms like LeetCode, GeeksforGeeks, HackerRank and CodeChef. Eager to learn and innovate in AI, Data Science, and Software Development.         </motion.p>
 
         <motion.div
           className="space-x-6"
