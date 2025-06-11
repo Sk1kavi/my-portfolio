@@ -67,6 +67,18 @@ const Internship = () => {
             >
               August 2024 - August 2024
             </motion.p>
+           <motion.ul 
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20}}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="text-lg text-gray-700 list-disc pl-6 space-y-2 mt-4 text-left"
+            >
+              <li>Supervised Learning – Implemented Random Forest (Fraud Detection, Churn Prediction) and Naïve Bayes (Spam Detection).</li>
+              <li>Ensemble Methods – Used Random Forest Classifier to improve model accuracy in Fraud Detection and Churn Prediction.</li>
+              <li>Natural Language Processing (NLP) – Applied text preprocessing and TF-IDF vectorization in Spam SMS Detection.</li>
+              <li>Model Evaluation – Assessed models using Accuracy, Precision, Recall, F1-Score (all models), and AUC-ROC (Fraud Detection, Churn Prediction).</li>
+              <li>Data Preprocessing – Handled missing values, feature selection, class imbalance, and categorical encoding across all projects.</li>
+            </motion.ul>
           </motion.div>
         </motion.div>
       </div>

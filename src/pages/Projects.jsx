@@ -20,7 +20,7 @@ const Projects = () => {
     {
       title: "CT Image Denoising",
       description: "Developed a web-based tool to enhance CT scan clarity without increasing radiation exposure.",
-      repo: "https://github.com/Sk1kavi?tab=repositories"
+      repo: "https://github.com/Sk1kavi/CT-Image-Denoising"
     },
     {
       title: "Telegram Chat Bot",
