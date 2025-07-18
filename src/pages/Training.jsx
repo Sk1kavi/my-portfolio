@@ -28,6 +28,12 @@ const Training = () => {
       duration: "December 2024 - January 2025",
       description: "Completed a training program in Data Science, gaining hands-on experience in data manipulation and analysis using Microsoft Excel . Developed proficiency in writing efficient SQL queries for data management and retrieval . Explored the fundamentals of generative AI and learned how ChatGPT integrates with Excel and SQL . Enhanced my skills in data visualization techniques and implemented various machine learning algorithms to derive meaningful insights from data." 
       },
+      {
+        title: " Web Development",
+        institution: "CodeBind Technologies",
+        duration: "November 2024 - November 2024",
+        description: "Gained  hands-on experience in building responsive websites, working with HTML, CSS, JavaScript, and understanding backend basics."
+      }
   ];
 
   return (

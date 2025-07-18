@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"; // Import if you want to add animations
+import { motion } from "framer-motion"; 
 
 const Navbar = () => {
   return (

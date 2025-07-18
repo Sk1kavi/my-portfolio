@@ -8,11 +8,6 @@ const Projects = () => {
       repo: "https://github.com/Sk1kavi/event-hall-booking-system"
     },
     {
-      title: "To-Do-App",
-      description: "A simple To-Do List application built using Java and Spring Boot. It allows users to add, complete, and delete tasks efficiently. The project is version-controlled with GitHub and designed for future enhancements.",
-      repo: "https://github.com/Sk1kavi/To-Do-App"
-    },    
-    {
       title: "Daily Journal",
       description: "A modern Android journaling app to securely record, update, and delete daily thoughts and memories. Features include search, reminders, customizable themes, offline storage with SQLite, and planned multimedia support for future enhancements",
       repo: "https://github.com/Sk1kavi/Daily-Journal"
