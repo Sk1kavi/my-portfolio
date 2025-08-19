@@ -3,6 +3,16 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Legal Assistant",
+      description: "Multilingual AI Chatbot for Indian Law Help with case filing and lawyer interaction",
+      repo: "https://github.com/Sk1kavi/Legal-Assistant"
+    },
+    {
+      title: "Sree-Apparels-EMS",
+      description: "Employee Management System (EMS) for Sree Apparels Garments Stitching Company to streamline employee data handling, attendance tracking, and payroll processing. The system enhances administrative efficiency and ensures accurate record-keeping",
+      repo: "https://github.com/Sk1kavi/Sree-Apparels-EMS_Server"
+    },
+    {
       title: "Event Hall Booking System",
       description: "A full-stack event hall booking application where customers can book halls, hall owners can manage listings, and admins oversee transactions and approvals.",
       repo: "https://github.com/Sk1kavi/event-hall-booking-system"
