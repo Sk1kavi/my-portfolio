@@ -10,7 +10,7 @@ import hackerrank from "../assets/hackerrank.png";
 
 const Hero = () => {
   const handleViewResume = () => {
-    const resumeUrl = "https://www.canva.com/design/DAGhNBYbv-s/gD33U1XdTBnM_g7K2NkeAw/view?utm_content=DAGhNBYbv-s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h37d2ee2081";
+    const resumeUrl = "https://drive.google.com/file/d/1SwnbpjAW86jKy5Xbty5qtqC7XeSApUIK/view?usp=sharing";
     window.open(resumeUrl, "_blank");
   };
 
