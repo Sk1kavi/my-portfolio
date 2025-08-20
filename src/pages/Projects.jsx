@@ -5,17 +5,21 @@ const Projects = () => {
     {
       title: "Legal Assistant",
       description: "Multilingual AI Chatbot for Indian Law Help with case filing and lawyer interaction",
-      repo: "https://github.com/Sk1kavi/Legal-Assistant"
+      repo: "https://github.com/Sk1kavi/Legal-Assistant",
+      live: "https://legal-assistant-xi.vercel.app/"
     },
     {
       title: "Sree-Apparels-EMS",
       description: "Employee Management System (EMS) for Sree Apparels Garments Stitching Company to streamline employee data handling, attendance tracking, and payroll processing. The system enhances administrative efficiency and ensures accurate record-keeping",
-      repo: "https://github.com/Sk1kavi/Sree-Apparels-EMS_Server"
+      server_repo: "https://github.com/Sk1kavi/Sree-Apparels-EMS_Server",
+      client_repo: "https://github.com/Sk1kavi/Sree-Apparels-EMS_Client",
+      live: "https://sree-apparels-ems.vercel.app/"
     },
     {
       title: "Event Hall Booking System",
       description: "A full-stack event hall booking application where customers can book halls, hall owners can manage listings, and admins oversee transactions and approvals.",
-      repo: "https://github.com/Sk1kavi/event-hall-booking-system"
+      repo: "https://github.com/Sk1kavi/event-hall-booking-system",
+      live: "https://event-hall-booking-system-fwnl.vercel.app/"
     },
     {
       title: "Daily Journal",
@@ -33,14 +37,14 @@ const Projects = () => {
       repo: "https://github.com/Sk1kavi/Telegram-Bot"
     },
     {
-        title: "Image Generator",
-        description: "A web-based image generator that takes user prompts and sends them to DALL·E via OpenAI API to create unique images. The generated image is displayed to the user, making AI-powered visual creativity accessible and easy.",
-        repo: "https://github.com/Sk1kavi/Image-Generator"
+      title: "Image Generator",
+      description: "A web-based image generator that takes user prompts and sends them to DALL·E via OpenAI API to create unique images. The generated image is displayed to the user, making AI-powered visual creativity accessible and easy.",
+      repo: "https://github.com/Sk1kavi/Image-Generator"
     },
     {
-        title: "Custom Recipe Generator",
-        description: "An application that sends user-provided ingredients as prompts to OpenAI's API to generate creative, personalized recipes. The output is displayed with an easy copy option, helping users explore new cooking ideas effortlessly.",
-        repo: "https://github.com/Sk1kavi/Custom-Recipe-Generator"
+      title: "Custom Recipe Generator",
+      description: "An application that sends user-provided ingredients as prompts to OpenAI's API to generate creative, personalized recipes. The output is displayed with an easy copy option, helping users explore new cooking ideas effortlessly.",
+      repo: "https://github.com/Sk1kavi/Custom-Recipe-Generator"
     },
     {
       title: "Credit Card Fraud Detection",
@@ -56,8 +60,7 @@ const Projects = () => {
       title: "Spam SMS Detection",
       description: "Developed a Machine Learning Model to detect spam SMS with an accuracy of 96%.",
       repo: "https://github.com/Sk1kavi/CODSOFT_TASKNO_4"
-    }  
-    
+    }
   ];
 
   // Animation variants
@@ -65,41 +68,30 @@ const Projects = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
+      transition: { staggerChildren: 0.3 },
     },
   };
 
   const projectVariants = {
-    hidden: { 
-      opacity: 0,
-      y: 50,
-      scale: 0.9
-    },
+    hidden: { opacity: 0, y: 50, scale: 0.9 },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 12,
-      },
+      transition: { type: "spring", stiffness: 100, damping: 12 },
     },
   };
 
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center  bg-gradient-to-r from-purple-600 to-purple-200 py-16 overflow-hidden">
+    <section
+      id="projects"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-200 py-16 overflow-hidden"
+    >
       <div className="max-w-4xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ 
-            duration: 0.6,
-            type: "spring",
-            stiffness: 100 
-          }}
+          transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
           className="text-4xl font-bold text-center mb-12 text-purple-950"
         >
           Projects
@@ -115,7 +107,7 @@ const Projects = () => {
             <motion.div
               key={index}
               variants={projectVariants}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.02,
                 boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
               }}
@@ -126,13 +118,13 @@ const Projects = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.2 }}
               >
-                <motion.h3 
+                <motion.h3
                   className="text-2xl font-bold text-violet-600 mb-4"
                   whileHover={{ scale: 1.05 }}
                 >
                   {project.title}
                 </motion.h3>
-                
+
                 <motion.p
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -142,13 +134,16 @@ const Projects = () => {
                   {project.description}
                 </motion.p>
 
+                {/* Links Section */}
                 <motion.div
-                  className="mt-4 flex space-x-4"
+                  className="mt-4 flex flex-wrap gap-4"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: 0.3 + index * 0.1 }}
-                >                  
-                  <motion.a
+                >
+                  {/* Single repo */}
+                  {project.repo && (
+                    <motion.a
                       href={project.repo}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -158,7 +153,50 @@ const Projects = () => {
                     >
                       Source Code
                     </motion.a>
-                </motion.div> 
+                  )}
+
+                  {/* Client repo */}
+                  {project.client_repo && (
+                    <motion.a
+                      href={project.client_repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-block border-2 border-violet-600 text-violet-600 px-4 py-2 rounded-lg font-medium hover:bg-violet-50 transition-colors"
+                    >
+                      Client Code
+                    </motion.a>
+                  )}
+
+                  {/* Server repo */}
+                  {project.server_repo && (
+                    <motion.a
+                      href={project.server_repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-block border-2 border-violet-600 text-violet-600 px-4 py-2 rounded-lg font-medium hover:bg-violet-50 transition-colors"
+                    >
+                      Server Code
+                    </motion.a>
+                  )}
+
+                  {/* Live demo */}
+                  {project.live && (
+                    <motion.a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-block bg-violet-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-violet-700 transition-colors"
+                    >
+                      Live Demo
+                    </motion.a>
+                  )}
+                </motion.div>
               </motion.div>
             </motion.div>
           ))}
