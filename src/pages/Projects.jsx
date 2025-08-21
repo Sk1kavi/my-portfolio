@@ -34,32 +34,38 @@ const Projects = () => {
     {
       title: "Telegram Chat Bot",
       description: "A smart Telegram bot that automates responses and assists users with quick, AI-powered interactions. Built using OpenAI's API for handling user queries directly in Telegram, offering instant and contextual replies.",
-      repo: "https://github.com/Sk1kavi/Telegram-Bot"
+      repo: "https://github.com/Sk1kavi/Telegram-Bot",
+      live: "https://www.linkedin.com/feed/update/urn:li:activity:7290268623238021120/"
     },
     {
       title: "Image Generator",
       description: "A web-based image generator that takes user prompts and sends them to DALL·E via OpenAI API to create unique images. The generated image is displayed to the user, making AI-powered visual creativity accessible and easy.",
-      repo: "https://github.com/Sk1kavi/Image-Generator"
+      repo: "https://github.com/Sk1kavi/Image-Generator",
+      live: "https://www.linkedin.com/feed/update/urn:li:activity:7290274079629099011/"
     },
     {
       title: "Custom Recipe Generator",
       description: "An application that sends user-provided ingredients as prompts to OpenAI's API to generate creative, personalized recipes. The output is displayed with an easy copy option, helping users explore new cooking ideas effortlessly.",
-      repo: "https://github.com/Sk1kavi/Custom-Recipe-Generator"
+      repo: "https://github.com/Sk1kavi/Custom-Recipe-Generator",
+      live: "https://www.linkedin.com/feed/update/urn:li:activity:7290275096731009024/"
     },
     {
       title: "Credit Card Fraud Detection",
       description: "Developed a Machine Learning Model to detect credit card frauds with an accuracy of 99%.",
-      repo: "https://github.com/Sk1kavi/CODSOFT_TASKNO_2"
+      repo: "https://github.com/Sk1kavi/CODSOFT_TASKNO_2",
+      live: "https://www.linkedin.com/feed/update/urn:li:activity:7233424377101348864/"
     },
     {
       title: "Customer Churn Prediction",
       description: "Utilized Machine Learning Algorithms to predict customer churns.",
-      repo: "https://github.com/Sk1kavi/CODSOFT_TASKNO_3"
+      repo: "https://github.com/Sk1kavi/CODSOFT_TASKNO_3",
+      live: "https://www.linkedin.com/feed/update/urn:li:activity:7233421873303146496/"
     },
     {
       title: "Spam SMS Detection",
       description: "Developed a Machine Learning Model to detect spam SMS with an accuracy of 96%.",
-      repo: "https://github.com/Sk1kavi/CODSOFT_TASKNO_4"
+      repo: "https://github.com/Sk1kavi/CODSOFT_TASKNO_4",
+      live: "https://www.linkedin.com/feed/update/urn:li:activity:7233425351303909376/"
     }
   ];
 
