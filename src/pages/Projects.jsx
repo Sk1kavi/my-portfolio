@@ -3,6 +3,18 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Hostel Maintenance Application",
+      description: "A mobile application where students can log hostel maintenance complaints, wardens can manage and update them, and admins oversee all hostels and grievance activities.",
+      repo: "https://github.com/Sk1kavi/Hostel_Maintenance_App"
+    },
+    {
+      title: "Real Time Public Transport Tracking",
+      description: "A web and mobile-based system that enables real-time bus tracking, allowing users to view live bus locations and receive arrival alerts, while drivers and admins manage routes, updates, and schedules through a centralized platform.",
+      server_repo: "https://github.com/Sk1kavi/Public-_Transport_Tracking_Server",
+      client_repo: "https://github.com/Sk1kavi/Driver-App",
+    },
+     
+    {
       title: "Legal Assistant",
       description: "Multilingual AI Chatbot for Indian Law Help with case filing and lawyer interaction",
       repo: "https://github.com/Sk1kavi/Legal-Assistant",
